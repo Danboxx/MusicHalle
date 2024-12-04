@@ -1,0 +1,214 @@
+/* Style pour la mise en page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo img {
+    height: 100px; /* Taille du logo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4a261; /* Changement de couleur au survol */
+}
+
+/* Section Hero - Image de fond, titre, texte et bouton */
+#hero {
+    background-image: url('https://img-31.ccm2.net/c-fOFxKL2gpFLrvmUMaelAQ8-2s=/1240x/smart/6b4bda32f7cd415389f230ae90788b89/ccmcms-hugo/10786591.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* La section occupe toute la hauteur de la fenêtre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour améliorer la lisibilité */
+    padding: 30px;
+    border-radius: 10px;
+}
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #f4a261;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e76f51;
+}
+
+
+section {
+    padding: 60px 20px;
+    text-align: justify;
+}
+
+h1 {
+    font-size: small;
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Section Produits */
+.produits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.produit-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.produit-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.produit-card:hover {
+    transform: scale(1.05);
+}
+
+/* Section Services */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.service-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Section Témoignages */
+#temoignages {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.temoignages-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.temoignage-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.temoignage-card:hover {
+    transform: scale(1.05);
+}
+
+.temoignage-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.temoignage-card .prestation {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.temoignage-card .description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.etoiles-card {
+    font-size: 1.5em;
+    color: #f4a261; /* Couleur des étoiles */
+}
+
+.etoile {
+    margin-right: 5px;
+}
