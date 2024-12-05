@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth; /* Ralentir le scroll */
+}
 /* Style pour la mise en page */
 body {
     font-family: Arial, sans-serif;
@@ -94,86 +97,49 @@ section {
     text-align: justify;
 }
 
-h1 {
-    font-size: small;
-}
-
 h3 {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-/* Section Produits */
+img {
+    width: 100%; /* Rend les images responsive */
+    max-width: 250px; /* Limite la taille maximale */
+    border-radius: 10px; /* Ajoute des bords arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+}
+
+/* Section produits */
 .produits-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.produit-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    margin: 15px;
+    display: flex; 
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si l'espace est insuffisant */
+    gap: 20px; /* Espacement entre les cartes */
+    justify-content: space-between; /* Aligne les éléments horizontalement */
     padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
 }
 
-.produit-card img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.produit-card:hover {
-    transform: scale(1.05);
-}
-
-
-/* Section Témoignages */
-#temoignages {
-    padding: 60px 20px;
-    background-color: #ffffff;
+.produits-card {
+    width: 100%; /* les cartes prennent toute la largeur de l'écran */
+    max-width: 300px; /* Taille maximale pour les cartes */
+    border: 1px solid #ddd; /* Bordure autour de chaque carte */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce autour de la carte */
+    border-radius: 8px; /* Coins arrondis */
+    background-color: #fff; /* Fond blanc */
     text-align: center;
 }
 
+.produits-card img {
+    width: 100%; /* L'image prend toute la largeur de la carte */
+    height: auto; /* Garde le ratio de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+}
+
 .temoignages-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.temoignage-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    display: flex; 
+    gap: 20px; /* Espacement entre les temoignages */
+    justify-content: space-between; /* Aligne les éléments horizontalement */
     padding: 20px;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-.temoignage-card:hover {
-    transform: scale(1.05);
-}
-
-.temoignage-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.temoignage-card .prestation {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.temoignage-card .description {
-    font-size: 1.1em;
-    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -187,3 +153,9 @@ footer {
     bottom: 0;
 }
 
+.card{
+    width: 30%;
+}
+.card img{
+    width: 100%
+}
